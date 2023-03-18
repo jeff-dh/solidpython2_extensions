@@ -2,7 +2,7 @@ from solid2.core.object_base import OpenSCADObject, OpenSCADConstant
 from solid2.core.scad_import import extra_scad_include
 from pathlib import Path
 
-extra_scad_include(f"{Path(__file__).parent.parent / 'scad/PolyGear/PolyGear.scad'}", use_not_include=False)
+extra_scad_include(f"{Path(__file__).parent.parent / 'scad/PolyGear/PolyGear.scad'}", use_not_include=True)
 
 class PGDemo(OpenSCADObject):
     def __init__(self, **kwargs):
