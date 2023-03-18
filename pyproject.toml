@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "solidpython2_extensions"
-version = "0.1.0"
+version = "0.1.2"
 description = "some extensions for solidpython2"
 authors = ["jeff <1105041+jeff-dh@users.noreply.github.com>"]
 license = "LGPL"
