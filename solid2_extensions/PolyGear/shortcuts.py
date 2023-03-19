@@ -4,6 +4,18 @@ from pathlib import Path
 
 extra_scad_include(f"{Path(__file__).parent.parent / 'scad/PolyGear/shortcuts.scad'}", use_not_include=True)
 
+class show_examples(OpenSCADObject):
+    def __init__(self, **kwargs):
+       super().__init__("show_examples", {**kwargs})
+
+class help(OpenSCADObject):
+    def __init__(self, **kwargs):
+       super().__init__("help", {**kwargs})
+
+class help_shortcuts(OpenSCADObject):
+    def __init__(self, **kwargs):
+       super().__init__("help_shortcuts", {**kwargs})
+
 class T(OpenSCADObject):
     def __init__(self, x=None, y=None, z=None, **kwargs):
        super().__init__("T", {"x" : x, "y" : y, "z" : z, **kwargs})
