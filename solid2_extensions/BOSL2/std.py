@@ -1,6 +1,28 @@
-from solid2.core.object_base import OpenSCADObject, OpenSCADConstant
-from solid2.core.scad_import import extra_scad_include
-from pathlib import Path
-
-extra_scad_include(f"{Path(__file__).parent.parent / 'scad/BOSL2/std.scad'}", use_not_include=False)
-
+from .version import *
+from .constants import *
+from .transforms import *
+from .distributors import *
+from .mutators import *
+from .color import *
+from .attachments import *
+from .shapes3d import *
+from .shapes2d import *
+from .drawing import *
+from .masks3d import *
+from .masks2d import *
+from .math import *
+from .paths import *
+from .lists import *
+from .comparisons import *
+from .linalg import *
+from .trigonometry import *
+from .vectors import *
+from .affine import *
+from .coords import *
+from .geometry import *
+from .regions import *
+from .strings import *
+from .skin import *
+from .vnf import *
+from .utility import *
+from .partitions import *
